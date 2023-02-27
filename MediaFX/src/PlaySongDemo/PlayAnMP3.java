@@ -27,8 +27,10 @@ public class PlayAnMP3 extends Application {
 
   @Override
   public void start(Stage stage) throws Exception {
+	// added this comment for push
+	// I, gabe, changed the song to be played before pushing to GitHub
     BorderPane pane = new BorderPane();
-    String path = "songfiles/Capture.mp3";
+    String path = "songfiles/SwingCheese.mp3";
     pane.setCenter( new Label(path));
     playASong(path);
     // Put the pane in a sized Scene and show the GUI
@@ -56,6 +58,7 @@ public class PlayAnMP3 extends Application {
     }
   
   private class Waiter implements Runnable {
+	  // added this comment to test push
     @Override
     public void run() {
       songsPlayed++;
